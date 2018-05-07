@@ -1,0 +1,92 @@
+
+ @font-face {
+    font-family: 'MyWebFont';
+   src:url('../../../assets/fonts//copperplate.woff') format('woff')
+       
+  }
+  @font-face {
+    font-family: 'SFProTextBold';
+   src:url('../../../assets/fonts//SFProText-Semibold.woff') format('woff')
+       
+  }
+  @font-face {
+    font-family: 'SFProText-Regular';
+   src:url('../../../assets/fonts/SFProText-Regular.woff') format('woff')
+       
+  }
+
+.Logincenter {
+   
+	
+	position:absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+	/* margin:auto; */
+	
+	max-width:100%;
+	max-height:100%;
+    overflow:auto;
+    
+    text-align: center;
+}
+.myCard{
+    width: 394px;
+    /* height: 35.33rem; */
+    height: 424px;
+    background-color:#DEDEDE ;
+    border-radius: 0.67rem;
+    margin:auto;
+    overflow:auto;
+    left:0; right:0;
+    top:0; bottom:0;
+	/* margin:auto; */
+	/* position:relative; */
+	max-width:100%;
+	max-height:100%;
+    overflow:auto;
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center; 
+    
+
+    
+ }
+.Logincenter1{
+
+    /* margin-top: 550px; */
+    text-align: center;
+    position: relative;
+    
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+ input{
+     text-align: center;
+ }
+
+
+
+  .myCustomFont{
+   font-family: 'MyWebFont' ;
+  }

@@ -1,0 +1,115 @@
+<div class="container-fluid" style="padding: 0px;overflow-x:hidden">
+
+    <div>
+        <nav class="navbar navbar-light bg-light" style="background: #F8F8F8;">
+            <a class="navbar-brand" href="#" style="font-size: 33px;line-height: 34px;">
+              
+              <i class="material-icons d-inline-block align-top" style="font-size: 33.9px;color: #FF5C47"> settings</i>
+              IPT
+            </a>
+          
+            <div class="nav navbar-nav navbar-right">
+          
+              <div>
+          
+                <span style="font-size: 17px;line-height:22px;margin-right: 9px;"><b>John Martino</b></span>
+                <span>  <img src="https://images.pexels.com/photos/658687/pexels-photo-658687.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:40px;height: 40px;border-radius: 50%; "/> </span>
+                     <p align="right" style="margin-bottom: 0px;margin-top: -15px;font-size: 13px;line-height: 22px;color: #4A4A4A;margin-right:52px;"><button type="button" class="btn"
+                      [popover]="popTemplate"
+                       placement="bottom"  [outsideClick]="true" containerClass="myCustomClassForPop"
+                      >
+                      Admin
+              </button></p>
+                 
+              </div>
+          
+            </div>
+          
+            
+          
+          
+          </nav>
+  
+  
+          <ng-template #popTemplate >
+              <p style="text-align: center;font-size: 18px;cursor: pointer;color: #006780">Switch to RD Team</p>
+              <div style="border: 1px solid #EAEAEA;margin-top: 0px;margin-bottom: 17px;"></div>
+              <p style="text-align: center;font-size: 18px;cursor: pointer;color: #006780"> My Details</p>
+              <p style="text-align: center;font-size: 18px;cursor: pointer;color: #006780"> Logout</p>
+            </ng-template>
+    </div>
+    
+    
+    
+    <div class="mainBody"style="margin-top: 68px;margin-left: 41px;margin-right: 41px;" >
+    
+    
+
+    
+    
+        <div class="myContent" >
+
+            <div style="margin-left: 20px;margin-bottom: 41px;">
+                <h3  class="myCustomDetailsHeading">USER SEARCH  >   Add New User </h3>
+                <div class="sperator" align="left" >
+                  
+                    <div style=" border: 2px solid #6A6A6A;width: 16.1px;"></div>
+                  </div>
+              </div>
+    
+            </div>
+    
+    
+       <div>
+          <table class="table">
+              <thead class="thead-light myTableCustomHeading">
+                <tr>
+                    <th scope="col"></th>
+                  <th scope="col" class="addNewUserHeading">Headings</th>
+                  <th scope="col" style="text-align: right;" class="addHeadingDetailsHeading">Enter Details</th>
+                  <th scope="col"></th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td></td>
+                  <td>User Name</td>
+                  <td style="text-align: right;"><input type="text" placeholder="Enter User Name"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                
+                  <td>Thornton</td>
+                  <td style="text-align: right;">@fat</td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                 
+                  <td>the Bird</td>
+                  <td style="text-align: right;">@twitter</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+       </div>
+    
+        
+
+    
+        
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    
+  

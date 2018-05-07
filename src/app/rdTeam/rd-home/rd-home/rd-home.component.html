@@ -1,0 +1,772 @@
+<div class="container-fluid" style="padding: 0px;overflow-x:hidden">
+
+    <div>
+        <nav class="navbar navbar-light bg-light" style="background: #F8F8F8;">
+            <a class="navbar-brand" href="#" style="font-size: 33px;line-height: 34px;">
+              
+              <i class="material-icons d-inline-block align-top" style="font-size: 33.9px;color: #FF5C47"> settings</i>
+              IPT
+            </a>
+          
+            <div class="nav navbar-nav navbar-right">
+          
+              <div>
+          
+                <span style="font-size: 17px;line-height:22px;margin-right: 9px;"><b>John Martino</b></span>
+                <span>  <img src="https://images.pexels.com/photos/658687/pexels-photo-658687.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:40px;height: 40px;border-radius: 50%; "/> </span>
+                     <p align="right" style="margin-bottom: 0px;margin-top: -15px;font-size: 13px;line-height: 22px;color: #4A4A4A;margin-right:52px;"><button type="button" class="btn"
+                      [popover]="popTemplate"
+                       placement="bottom" [outsideClick]="true" containerClass="myCustomClassForPop"
+                      >
+                      RD team
+              </button></p>
+                 
+              </div>
+          
+            </div>
+          
+            
+          
+          
+          </nav>
+  
+  
+          <ng-template #popTemplate >
+              <p style="text-align: center;font-size: 18px;cursor: pointer;color: #006780">Switch to Admin</p>
+              <div style="border: 1px solid #EAEAEA;margin-top: 0px;margin-bottom: 17px;"></div>
+              <p style="text-align: center;font-size: 18px;cursor: pointer;color: #006780"> My Details</p>
+              <p style="text-align: center;font-size: 18px;cursor: pointer;color: #006780"> Logout</p>
+            </ng-template>
+    </div>
+    
+    
+    
+    <div class="mainBody" >
+    
+    
+        <div class="heading" style="background: #F4F4F4;border: 1px solid #EDEDED;margin-bottom: 40px;">
+            <h3 style="text-align: center;font-size: 18px;color: #292929;letter-spacing: 0.49px;margin-top: 47px;">SHIKEISHYO LIST</h3>
+            <div class="sperator" align="middle" >
+        
+              <div style=" border: 2px solid #6A6A6A;width: 16.1px;"></div>
+            </div>
+                  <div style="margin-top: 36px;">
+                       <div class="row" style="padding-bottom: 39px;">
+                          <div class="col-2">
+    
+                          </div>
+                          <div class="col-8">
+                              <div class="input-group " style="height: 35px;">
+                                  <div class="input-group-prepend">
+                                      <div ngbDropdown class="d-inline-block">
+                                          <button class="btn myCustomDropDown" id="dropdownBasic1" ngbDropdownToggle>Search By : Shikeishyo Number</button>
+                                          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                            <button class="dropdown-item">Action - 1</button>
+                                            <button class="dropdown-item">Another Action</button>
+                                            <button class="dropdown-item">Something else is here</button>
+                                          </div>
+                                  </div>
+                                
+                                </div>
+    
+                                <input type="text" class="form-control mycustomInputSearch" aria-label="Text input with dropdown button" placeholder="Enter Shikeishyo Number here" >
+                                <button class="btn  myCustomButton" type="button" >Search</button>
+                            </div>
+                            <div class="col-2">
+    
+                              </div>
+                       </div>
+                    
+                        
+                 
+                        
+    
+                  </div>
+     
+        </div>
+        </div>
+    
+    
+        <div class="myContent" >
+    <!-- <div class="myBodyItem" >
+    
+                <div class="row">
+                  <div class="col-6">
+                      <h3 class="contentSubItem">New Shikeishyo</h3>
+                  </div>
+                  <div class="col-6" align="right" >
+    
+                      <h3 id="approvedStausContent">4 Approved • 2 Rejected<i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i></h3>
+                      
+                    </div>
+                    
+                </div>
+         
+        
+    </div>
+    
+    
+    <div class="myBodyItem" >
+    
+        <div class="row">
+          <div class="col-6">
+              <h3 class="contentSubItem">In-progress Shikeishyo</h3>
+          </div>
+          <div class="col-6" align="right" >
+    
+              <h3 id="approvedStausContent"> Pending approval from LM<i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i></h3>
+              
+            </div>
+            
+        </div>
+    
+    
+    </div>
+    
+    
+    <div class="myBodyItem" >
+    
+        <div class="row">
+          <div class="col-6">
+              <h3 class="contentSubItem">Part Recieved Shikeishyo</h3>
+          </div>
+          <div class="col-6" align="right" >
+    
+              <h3 id="approvedStausContent">5  Shikeicho part received<i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i></h3>
+              
+            </div>
+            
+        </div>
+    
+    
+    </div>
+    
+    
+    <div class="myBodyItem" >
+    
+        <div class="row">
+          <div class="col-6">
+              <h3 class="contentSubItem">Action Awaiting</h3>
+          </div>
+          <div class="col-6" align="right" >
+    
+              <h3 id="approvedStausContent">5  Shikeicho part received<i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i></h3>
+              
+            </div>
+            
+        </div>
+    
+    
+    </div> -->
+    
+    
+    
+    
+    <accordion class="myCustomClass">
+        <accordion-group (isOpenChange)="changeIcon($event)" style="margin-bottom: 30px;" class="customClass">
+            
+            <div accordion-heading class="clearfix" id="approvedStausContent">
+            New Shikeisho
+            <span class=" float-right pull-right">4 Approved <span class="dot" ><i class="fa fa-circle" aria-hidden="true" style="font-size: 10px;"></i></span> 2 Rejected <span *ngIf="changeIconVar;else other_content"><i class="fa fa-angle-double-down" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i></span>
+         
+        </span>
+          </div>
+         <div class="card1" >
+                    <div class="card-body1" style="margin-bottom: 30px;">
+                      <div class="row">
+                                 <div class="col-5" align="left">
+                                   <h4>Subject</h4>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <h5>04-24-2018</h5>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <div class="verticalLine"></div>
+                                    <div>
+                                        <div id="content">
+  
+                                          </div>
+    
+                                    </div>
+                                   
+                                    <div class="verticalLine1"></div>
+                                  </div>
+                                 <div class="col-3" align="middle">
+                                    <h5 class="fundingDetailsCSS">Funding Details</h5>
+                                 </div>
+                      </div>
+    
+    
+                      <div class="row" style="margin-top: -17px;">
+                          <div class="col-5" align="left">
+                            <h4 class="subDescription" (click) = "goToDetails()" style="cursor: pointer;">Shikeicho Number #123456</h4>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <h5 class="dateDiscription">Due Date</h5>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <!-- <div class="verticalLine"></div> -->
+                             <div>
+                                <h5 class="statusDiscription">Approved</h5>
+                                 <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+    
+                             </div>
+                            
+                             <!-- <div class="verticalLine1"></div> -->
+                           </div>
+                          <div class="col-3" align="middle">
+                             <h5 class="detailsDescription">Funding Approval Link</h5>
+                          </div>
+               </div>
+                    </div>
+         </div>
+
+
+
+    
+    
+         <div>
+    
+    
+    
+    
+    
+    
+            <div class="card1">
+                <div class="card-body1" style="margin-bottom: 30px;">
+                  <div class="row">
+                             <div class="col-5" align="left">
+                               <h4>Subject</h4>
+                             </div>
+                             <div class="col-2" align="middle">
+                               <h5>04-24-2018</h5>
+                             </div>
+                             <div class="col-2" align="middle">
+                               <div class="verticalLine"></div>
+                                <div>
+                                    <div id="content">
+  
+                                      </div>
+                                </div>
+                               
+                                <div class="verticalLine1"></div>
+                              </div>
+                             <div class="col-3" align="middle">
+                                <h5 class="fundingDetailsCSS">Funding Details</h5>
+                             </div>
+                  </div>
+    
+    
+                  <div class="row" style="margin-top: -17px;">
+                      <div class="col-5" align="left">
+                        <h4 class="subDescription">Shikeicho Number #123456</h4>
+                      </div>
+                      <div class="col-2" align="middle">
+                        <h5 class="dateDiscription">Due Date</h5>
+                      </div>
+                      <div class="col-2" align="middle">
+                        <!-- <div class="verticalLine"></div> -->
+                         <div>
+                            <h5 class="statusDiscription">Approved</h5>
+                             <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+    
+                         </div>
+                        
+                         <!-- <div class="verticalLine1"></div> -->
+                       </div>
+                      <div class="col-3" align="middle">
+                         <h5 class="detailsDescription">Funding Approval Link</h5>
+                      </div>
+           </div>
+                </div>
+     </div>
+         </div>
+    
+    
+    
+    
+    
+         <div>
+    
+            <div class="card1">
+                <div class="card-body1" style="margin-bottom: 30px;">
+                  <div class="row">
+                             <div class="col-5" align="left">
+                               <h4>Subject</h4>
+                             </div>
+                             <div class="col-2" align="middle">
+                               <h5>04-24-2018</h5>
+                             </div>
+                             <div class="col-2" align="middle">
+                               <div class="verticalLine"></div>
+                                <div>
+                                    <div id="content">
+  
+                                      </div>
+                                </div>
+                               
+                                <div class="verticalLine1"></div>
+                              </div>
+                             <div class="col-3" align="middle">
+                                <h5 class="fundingDetailsCSS">Funding Details</h5>
+                             </div>
+                  </div>
+    
+    
+                  <div class="row" style="margin-top: -17px;">
+                      <div class="col-5" align="left">
+                        <h4 class="subDescription">Shikeicho Number #123456</h4>
+                      </div>
+                      <div class="col-2" align="middle">
+                        <h5 class="dateDiscription">Due Date</h5>
+                      </div>
+                      <div class="col-2" align="middle">
+                        <!-- <div class="verticalLine"></div> -->
+                         <div>
+                            <h5 class="statusDiscription">Approved</h5>
+                             <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+    
+                         </div>
+                        
+                         <!-- <div class="verticalLine1"></div> -->
+                       </div>
+                      <div class="col-3" align="middle">
+                         <h5 class="detailsDescription">Funding Approval Link</h5>
+                      </div>
+           </div>
+                </div>
+     </div>
+         </div>
+  
+  
+  
+         <div>
+    
+            <div class="card1">
+                <div class="card-body1">
+                  <div class="row">
+                             <div class="col-5" align="left">
+                               <h4>Subject</h4>
+                             </div>
+                             <div class="col-2" align="middle">
+                               <h5>04-24-2018</h5>
+                             </div>
+                             <div class="col-2" align="middle">
+                               <div class="verticalLine"></div>
+                                <div>
+                                    <div id="content1">
+  
+                                      </div>
+                                </div>
+                               
+                                <div class="verticalLine1"></div>
+                              </div>
+                             <div class="col-3" align="middle">
+                                <h5 class="fundingDetailsCSS">Upload PDF</h5>
+                             </div>
+                  </div>
+    
+    
+                  <div class="row" style="margin-top: -17px;">
+                      <div class="col-5" align="left">
+                        <h4 class="subDescription">Shikeicho Number #123456</h4>
+                      </div>
+                      <div class="col-2" align="middle">
+                        <h5 class="dateDiscription">Due Date</h5>
+                      </div>
+                      <div class="col-2" align="middle">
+                        <!-- <div class="verticalLine"></div> -->
+                         <div>
+                            <h5 class="statusDiscription">Approved</h5>
+                             <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+    
+                         </div>
+                        
+                         <!-- <div class="verticalLine1"></div> -->
+                       </div>
+                      <div class="col-3" align="middle">
+                         <h5 class="detailsDescription">Funding Approval Link</h5>
+                      </div>
+           </div>
+                </div>
+     </div>
+         </div>
+         
+        </accordion-group>
+    
+        <accordion-group (isOpenChange)="changeIcon1($event)" style="margin-bottom: 30px;">
+            <div accordion-heading class="clearfix" id="approvedStausContent">
+              In-progress Shikeisho
+              <span class=" float-right pull-right">4 Pending approval from LM <span *ngIf="changeIconVar1;else other_content"><i class="fa fa-angle-double-down" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i></span>
+           
+          </span>
+            </div>
+            <!-- This is just some content to illustrate fancy headings. -->
+
+
+            <div>
+
+                <div class="card1" >
+                    <div class="card-body1" style="margin-bottom: 30px;">
+                      <div class="row">
+                                 <div class="col-5" align="left">
+                                   <h4>Subject</h4>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <h5>04-24-2018</h5>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <div class="verticalLine"></div>
+                                    <div>
+                                        <div id="content">
+  
+                                          </div>
+    
+                                    </div>
+                                   
+                                    <div class="verticalLine1"></div>
+                                  </div>
+                                 <div class="col-3" align="middle">
+                                    <h5 class="fundingDetailsCSS">Funding Details</h5>
+                                 </div>
+                      </div>
+    
+    
+                      <div class="row" style="margin-top: -17px;">
+                          <div class="col-5" align="left">
+                            <h4 class="subDescription" (click) = "goToDetails()" style="cursor: pointer;">Shikeicho Number #123456</h4>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <h5 class="dateDiscription">Due Date</h5>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <!-- <div class="verticalLine"></div> -->
+                             <div>
+                                <h5 class="statusDiscription">Approved</h5>
+                                 <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+    
+                             </div>
+                            
+                             <!-- <div class="verticalLine1"></div> -->
+                           </div>
+                          <div class="col-3" align="middle">
+                             <h5 class="detailsDescription">Funding Approval Link</h5>
+                          </div>
+               </div>
+                    </div>
+         </div>
+
+         <div class="card1" >
+            <div class="card-body1" style="margin-bottom: 30px;">
+              <div class="row">
+                         <div class="col-5" align="left">
+                           <h4>Subject</h4>
+                         </div>
+                         <div class="col-2" align="middle">
+                           <h5>04-24-2018</h5>
+                         </div>
+                         <div class="col-2" align="middle">
+                           <div class="verticalLine"></div>
+                            <div>
+                                <div id="content">
+
+                                  </div>
+
+                            </div>
+                           
+                            <div class="verticalLine1"></div>
+                          </div>
+                         <div class="col-3" align="middle">
+                            <h5 class="fundingDetailsCSS">Funding Details</h5>
+                         </div>
+              </div>
+
+
+              <div class="row" style="margin-top: -17px;">
+                  <div class="col-5" align="left">
+                    <h4 class="subDescription" (click) = "goToDetails()" style="cursor: pointer;">Shikeicho Number #123456</h4>
+                  </div>
+                  <div class="col-2" align="middle">
+                    <h5 class="dateDiscription">Due Date</h5>
+                  </div>
+                  <div class="col-2" align="middle">
+                    <!-- <div class="verticalLine"></div> -->
+                     <div>
+                        <h5 class="statusDiscription">Approved</h5>
+                         <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+
+                     </div>
+                    
+                     <!-- <div class="verticalLine1"></div> -->
+                   </div>
+                  <div class="col-3" align="middle">
+                     <h5 class="detailsDescription">Funding Approval Link</h5>
+                  </div>
+       </div>
+            </div>
+ </div>
+
+ <div class="card1" >
+    <div class="card-body1" style="margin-bottom: 30px;">
+      <div class="row">
+                 <div class="col-5" align="left">
+                   <h4>Subject</h4>
+                 </div>
+                 <div class="col-2" align="middle">
+                   <h5>04-24-2018</h5>
+                 </div>
+                 <div class="col-2" align="middle">
+                   <div class="verticalLine"></div>
+                    <div>
+                        <div id="content">
+
+                          </div>
+
+                    </div>
+                   
+                    <div class="verticalLine1"></div>
+                  </div>
+                 <div class="col-3" align="middle">
+                    <h5 class="fundingDetailsCSS">Funding Details</h5>
+                 </div>
+      </div>
+
+
+      <div class="row" style="margin-top: -17px;">
+          <div class="col-5" align="left">
+            <h4 class="subDescription" (click) = "goToDetails()" style="cursor: pointer;">Shikeicho Number #123456</h4>
+          </div>
+          <div class="col-2" align="middle">
+            <h5 class="dateDiscription">Due Date</h5>
+          </div>
+          <div class="col-2" align="middle">
+            <!-- <div class="verticalLine"></div> -->
+             <div>
+                <h5 class="statusDiscription">Approved</h5>
+                 <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+
+             </div>
+            
+             <!-- <div class="verticalLine1"></div> -->
+           </div>
+          <div class="col-3" align="middle">
+             <h5 class="detailsDescription">Funding Approval Link</h5>
+          </div>
+</div>
+    </div>
+</div>
+            </div>
+    
+          </accordion-group>
+    
+   
+    
+          <accordion-group (isOpenChange)="changeIcon3($event)" style="margin-bottom: 30px;">
+            <div accordion-heading class="clearfix" id="approvedStausContent">
+                Part Recieved Shikeisho
+              <span class=" float-right pull-right">5  Shikeicho part received <span *ngIf="changeIconVar3;else other_content"><i class="fa fa-angle-double-down" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i></span>
+           
+          </span>
+            </div>
+            <!-- This is just some content to illustrate fancy headings. -->
+    
+    
+            <div>
+    
+    
+    
+    
+    
+    
+                <div class="card1">
+                    <div class="card-body1" style="margin-bottom: 30px;">
+                      <div class="row">
+                                 <div class="col-5" align="left">
+                                   <h4>Subject</h4>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <h5>04-24-2018</h5>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <div class="verticalLine"></div>
+                                    <div>
+                                        <div id="content">
+      
+                                          </div>
+                                    </div>
+                                   
+                                    <div class="verticalLine1"></div>
+                                  </div>
+                                 <div class="col-3" align="middle">
+                                    <h5 class="fundingDetailsCSS">Funding Details</h5>
+                                 </div>
+                      </div>
+        
+        
+                      <div class="row" style="margin-top: -17px;">
+                          <div class="col-5" align="left">
+                            <h4 class="subDescription">Shikeicho Number #123456</h4>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <h5 class="dateDiscription">Due Date</h5>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <!-- <div class="verticalLine"></div> -->
+                             <div>
+                                <h5 class="statusDiscription">Approved</h5>
+                                 <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+        
+                             </div>
+                            
+                             <!-- <div class="verticalLine1"></div> -->
+                           </div>
+                          <div class="col-3" align="middle">
+                             <h5 class="detailsDescription">Funding Approval Link</h5>
+                          </div>
+               </div>
+                    </div>
+         </div>
+             </div>
+        
+        
+        
+        
+        
+             <div>
+        
+                <div class="card1">
+                    <div class="card-body1" style="margin-bottom: 30px;">
+                      <div class="row">
+                                 <div class="col-5" align="left">
+                                   <h4>Subject</h4>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <h5>04-24-2018</h5>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <div class="verticalLine"></div>
+                                    <div>
+                                        <div id="content">
+      
+                                          </div>
+                                    </div>
+                                   
+                                    <div class="verticalLine1"></div>
+                                  </div>
+                                 <div class="col-3" align="middle">
+                                    <h5 class="fundingDetailsCSS">Funding Details</h5>
+                                 </div>
+                      </div>
+        
+        
+                      <div class="row" style="margin-top: -17px;">
+                          <div class="col-5" align="left">
+                            <h4 class="subDescription">Shikeicho Number #123456</h4>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <h5 class="dateDiscription">Due Date</h5>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <!-- <div class="verticalLine"></div> -->
+                             <div>
+                                <h5 class="statusDiscription">Approved</h5>
+                                 <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+        
+                             </div>
+                            
+                             <!-- <div class="verticalLine1"></div> -->
+                           </div>
+                          <div class="col-3" align="middle">
+                             <h5 class="detailsDescription">Funding Approval Link</h5>
+                          </div>
+               </div>
+                    </div>
+         </div>
+             </div>
+      
+      
+      
+             <div>
+        
+                <div class="card1">
+                    <div class="card-body1">
+                      <div class="row">
+                                 <div class="col-5" align="left">
+                                   <h4>Subject</h4>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <h5>04-24-2018</h5>
+                                 </div>
+                                 <div class="col-2" align="middle">
+                                   <div class="verticalLine"></div>
+                                    <div>
+                                        <div id="content1">
+      
+                                          </div>
+                                    </div>
+                                   
+                                    <div class="verticalLine1"></div>
+                                  </div>
+                                 <div class="col-3" align="middle">
+                                    <h5 class="fundingDetailsCSS">Upload PDF</h5>
+                                 </div>
+                      </div>
+        
+        
+                      <div class="row" style="margin-top: -17px;">
+                          <div class="col-5" align="left">
+                            <h4 class="subDescription">Shikeicho Number #123456</h4>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <h5 class="dateDiscription">Due Date</h5>
+                          </div>
+                          <div class="col-2" align="middle">
+                            <!-- <div class="verticalLine"></div> -->
+                             <div>
+                                <h5 class="statusDiscription">Approved</h5>
+                                 <!-- <i class="fa fa-circle" aria-hidden="true" style="color: #74C916;font-size: 17px;border: 1px solid  #74C916 ;border-style: dotted;border-radius:9.5px;"></i> -->
+        
+                             </div>
+                            
+                             <!-- <div class="verticalLine1"></div> -->
+                           </div>
+                          <div class="col-3" align="middle">
+                             <h5 class="detailsDescription">Funding Approval Link</h5>
+                          </div>
+               </div>
+                    </div>
+         </div>
+             </div>
+          </accordion-group>
+       
+    
+        
+      </accordion>
+    
+      <ng-template #other_content>
+        <i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i>
+      </ng-template>
+    
+      <ng-template #other_content1>
+        <i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i>
+      </ng-template>
+      <ng-template #other_content2>
+        <i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i>
+      </ng-template>
+      <ng-template #other_content3>
+        <i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 9px;color:#006780 "></i>
+      </ng-template>
+    
+        </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    
+  

@@ -1,0 +1,47 @@
+<div class="container-fluid" style="margin: 0;padding: 0">
+
+  <div class="Logincenter" >
+
+
+
+ <form (ngSubmit)="onSubmit()"> 
+  <div class="card myCard" style="margin-top: 75px;">
+
+    <div class="card-body">
+
+      <div>
+              
+
+              <div >
+                <div style="font-size: 2.82rem;"> <i class="material-icons" style="font-size: 2.82rem;color: #FF5C47"> settings</i> <span style="height: 4.08rem;font-size:4rem ;" class="myCustomFont">IPT</span></div>
+              </div>
+            
+            <div>
+
+                <input type="text" name="username" placeholder="User name" style="width:306px;height: 48px;margin-bottom: 22px;" [(ngModel)]="username"><br>
+                <input type="password" name="password" placeholder="Password" style="width:306px;height: 48px;margin-bottom: 45px;" [(ngModel)]="password"><br>
+            </div>
+
+            <button type="submit" style="width: 306px;height: 48px;background-color: #006780;color: #ffffff;margin-bottom:15px;">Sign In</button>
+      </div>
+             <div style="font-size: 17px;line-height: 20px;color: #006780">Forgot Password</div>
+        
+    
+    </div>
+
+  </div>
+  <div style="font-size: 17px;line-height: 20px;margin-bottom: 153px;" > <a routerLink="/signUp"  style="color: #006780;">Register For New User</a></div>
+  <div  style="background-color: #DEDEDE;color: #4A4A4A ;">
+      <p style="padding-top: 16px;font-size: 17px;line-height: 20px;font-family: 'SFProTextBold';"><b>Security Notes</b></p>
+<p style="font-size: 20px;margin-top: 19px;margin-left: 33px;margin-right: 33px;margin-bottom: 26px;font-family: 'SFProTextRegular'">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex </p>
+<p style="font-size: 17px;line-height: 20px;font-family: 'SFProTextBold';"><b>Legal Note</b></p>
+<p style="font-size: 20px;line-height: 24px;padding-top:10px;padding-bottom: 30px;color: #006780;margin-bottom: 0px;font-family: 'SFProTextRegular'">Samplelink@abc.com</p>
+
+    </div>
+
+  </form>
+</div>
+  
+
+
+</div>

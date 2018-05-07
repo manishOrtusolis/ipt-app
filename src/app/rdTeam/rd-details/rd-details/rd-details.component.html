@@ -1,0 +1,222 @@
+<div class="container-fluid" style="padding: 0px;overflow-x:hidden">
+
+  <div>
+      <nav class="navbar navbar-light bg-light" style="background: #F8F8F8;">
+          <a class="navbar-brand myIconHeading" href="#" >
+            
+            <i class="material-icons d-inline-block align-top" style="font-size: 55px;color: #FF5C47"> settings</i>
+            IPT
+          </a>
+        
+          <div class="nav navbar-nav navbar-right">
+        
+            <div>
+        
+              <span style="font-size: 17px;line-height:22px;margin-right: 9px;"><b>John Martino</b></span>
+              <span>  <img src="https://images.pexels.com/photos/658687/pexels-photo-658687.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:40px;height: 40px;border-radius: 50%; "/> </span>
+                   <p align="right" style="margin-bottom: 0px;margin-top: -15px;font-size: 13px;line-height: 22px;color: #4A4A4A;margin-right:52px;">RD team</p>
+               
+            </div>
+        
+          </div>
+        
+          
+        
+        
+        </nav>
+  </div>
+
+ <div class="myDetailsBody" style="margin-top: 68px;margin-left: 41px;margin-right: 41px;">
+
+  <div style="margin-left: 20px;margin-bottom: 41px;">
+    <h3  class="myCustomDetailsHeading">SHIKEISHYO LIST  >   Shikeishyo Number #{{jsonData.shikeisyoNo}} </h3>
+    <div class="sperator" align="left" >
+      
+        <div style=" border: 2px solid #6A6A6A;width: 16.1px;"></div>
+      </div>
+  </div>
+
+  <div class="myCustomCardStyle" style="margin-bottom: 66px;">
+    <div><h4 style="font-size: 28px; color: #292929; letter-spacing: 0.76px;padding-top: 17px;padding-left: 20px;margin-bottom: 5px;">Subject</h4></div>
+    <div class="row">
+        <div class="col-5" align="left">
+          <h4 style="margin-left: 20px;" class="mySheikhsoDtailsFont">Shikeisho Number #{{jsonData.shikeisyoNo}}</h4>
+        </div>
+        <div class="col-2" align="middle">
+          <h5>{{jsonData.rdDesiredDate}}</h5>
+        </div>
+        <div class="col-2" align="middle">
+          <div class="verticalLine"></div>
+           <div>
+              <div id="content">
+
+                </div>
+
+           </div>
+          
+           <div class="verticalLine1" style="margin-top: -17px;"></div>
+         </div>
+        <div class="col-3" align="middle">
+           <h5>Funding Details</h5>
+        </div>
+</div>
+
+
+<div class="row" style="margin-top: -18px;">
+  <div class="col-5" align="left">
+    
+  </div>
+  <div class="col-2" align="middle">
+    <h5  class="h5CustomClass">Desired Date</h5>
+  </div>
+  <div class="col-2 " align="middle">
+    
+     <div>
+        <h5 class="h5CustomClass"> Funding Approved </h5>
+
+     </div>
+    
+     
+   </div>
+  <div class="col-3" align="middle">
+     <h5 class="h5CustomClass">Funding Approval Link</h5>
+  </div>
+</div> 
+<div>
+  <h6 class="EoNoClass">EO Number #{{jsonData.eoNo}}</h6>
+</div>
+
+<div style="border: 1px solid #EAEAEA;margin-top: 17px;margin-bottom: 17px;border-style: dashed;"></div>
+
+<div>
+  <div class="row myCustomHeadingDetails">
+
+    <div class="col-7" >
+      <div style="padding-left: 18px;">
+          {{jsonData.designerName}}
+      </div>
+      
+    </div>
+    <div class="col-5">
+
+      <div class="row">
+             <div class="col-4" align="middle">
+              
+              <h6 class="myCustomHeadingDetails">13HGI1234 </h6>
+             </div>
+             <div class="col-4" align="middle">
+                <div class="verticalLine"></div>
+              
+              <h6 class="myCustomHeadingDetails">15678 </h6>
+              <div class="verticalLine1" style="margin-top: -28px;"></div>
+            </div>
+            <div class="col-4" align="middle">
+              
+              <h6 class="myCustomHeadingDetails">EE214 </h6>
+            </div>
+          </div>
+    </div>
+    
+  </div>
+
+
+  <div class="row myCustomHeadingDetails1" style="margin-top: -19px;padding-bottom: 18px;">
+
+      <div class="col-7" >
+        <div style="padding-left: 18px;">
+            Designer Name
+        </div>
+        
+      </div>
+      <div class="col-5">
+  
+        <div class="row">
+               <div class="col-4" align="middle">
+                
+                <h6 class="myCustomHeadingDetails1">Requester Id </h6>
+               </div>
+               <div class="col-4" align="middle">
+                  
+                
+                <h6 class="myCustomHeadingDetails1">Kanri No. </h6>
+                
+              </div>
+              <div class="col-4" align="middle">
+                
+                <h6 class="myCustomHeadingDetails1">Model No. </h6>
+              </div>
+            </div>
+      </div>
+      
+    </div>
+</div>
+  </div>
+
+
+  <div>
+
+      <table class="table">
+          <thead class="thead-light" style="background: #E8E8E8;border: 1px solid #EAEAEA;">
+            <tr>
+              <th>Part Number</th>
+              <th>Part Name</th>
+              <th>Quantity</th>
+              <th>PPS</th>
+              <th>Delsired Date</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Part 1</td>
+              <td>Air Filter</td>
+              <td>8</td>
+              <td>12455</td>
+              <td>12-05-2018</td>
+              <td>Pending with BOM</td>
+              <td></td>
+            </tr>
+            <tr>
+                <td>Part 2</td>
+                <td>Air Filter</td>
+                <td>8</td>
+                <td>12455</td>
+                <td>12-05-2018</td>
+                <td>Pending with BOM</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Part 3</td>
+                <td>Air Filter</td>
+                <td>8</td>
+                <td>12455</td>
+                <td>12-05-2018</td>
+                <td>Pending with BOM</td>
+                <td></td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+
+  <div>
+    <h6 class="BomChangesTextCss">BOM Team has changed the quantity </h6>
+  </div>
+  <div *ngIf= "showChangesIncoterm">
+    <h6 class="BomChangesTextCss">Incoterm Approval </h6>
+  </div>
+
+
+
+  <div align="middle" style=" padding-bottom: 30px;"> 
+
+    <button class="btn myCustomButtonForApprove">Approve </button>
+  </div>
+
+
+
+  
+ </div>
+
+
+  </div>

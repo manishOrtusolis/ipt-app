@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'SFProText-Regular';
+   src:url('../../../../assets/fonts/SFProText-Regular.woff') format('woff');
+       
+  }
+  @font-face {
+    font-family: 'SFProText-Semibold';
+   src:url('../../../../assets/fonts/SFProText-Semibold.woff') format('woff');
+       
+  }
+  
+  ::placeholder {
+      
+      font-size: 13px;
+      color: #979797;
+      letter-spacing: 0.29px;
+    }
+  
+    .myBodyItem{
+      background: #F4F4F4;
+      border: 1px solid #D9D9D9;
+      margin-bottom: 30px;
+    }
+  
+    .contentSubItem{
+      font-size: 20px;
+      color: #000000;
+      letter-spacing: 0.75px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 42px;
+    }
+    #approvedStausContent{
+      font-size: 20px;
+      color: #000000;
+      letter-spacing: 0.75px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-right: 35.6px;
+    }
+  
+    #buttonSearchId{
+      background: #006780;
+      border-radius: 8px;
+      color: #ffffff;
+      padding-top: 6.5px;
+      padding-bottom: 6.5px;
+      padding-left: 48px;
+      padding-right: 48px;
+      font-size: 20px;
+      letter-spacing: 0.75px;
+  text-align: center;
+  line-height: 24px;
+    }
+    /* :host .card{
+      border: 0px rgba(0, 0, 0, 0) ;
+    } */
+  
+    /deep/ .card{
+     border: none;
+   }
+   .card-body1{
+    background: #FDFDFD;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  padding: 17px 30px 32px 20px;
+   }
+  
+    
+  
+      /* .panel-default{
+        border: 0px rgba(0, 0, 0, 0) ;
+      } */
+  
+     .verticalLine{
+       width: 3px;
+       height: 42px;
+       border: 1px solid #C6C6C6;
+       float: left;
+       background: #C6C6C6;
+     }
+     .verticalLine1{
+      width: 3px;
+      height: 42px;
+      border: 1px solid #C6C6C6;
+      float: right;
+      background: #C6C6C6;
+      margin-top: -15px;
+    }
+  
+    .subDescription{
+      font-size: 20px;
+  color: #666666;
+  letter-spacing: 0.38px;
+  line-height: 24px;
+    }
+    .dateDiscription{
+      font-size: 17px;
+  color: #666666;
+  letter-spacing: -0.41px;
+  text-align: center;
+  line-height: 22px;
+    }
+    .statusDiscription{
+      font-size: 17px;
+  color: #666666;
+  letter-spacing: -0.41px;
+  text-align: center;
+  line-height: 22px;
+    }
+    .detailsDescription{
+      font-size: 17px;
+  color: #666666;
+  letter-spacing: -0.41px;
+  text-align: center;
+  line-height: 22px;
+    }
+  
+    .myCustomButton{
+      background: #006780;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.75px;
+    }
+    .myContent{
+      background: #ffffff;
+      margin-top: 45px;
+  
+    }
+  
+    .myCustomDropDown{
+      font-size: 13px;
+  color: #979797;
+  letter-spacing: 0.29px;
+  background: #FAFAFA;
+  border: #979797;
+  border: 1px solid rgba(151,151,151,0.5);
+    }
+    .mycustomInputSearch{
+      font-size: 13px;
+      color: #979797;
+      letter-spacing: 0.29px;
+      background: #FAFAFA;
+    }
+    
+    button{
+      background: none;
+    }
+  
+    .btn.focus, .btn:focus{
+      box-shadow: inherit;
+    }
+  
+    
+  :host >>> .popover-body {
+     padding: 10px;
+     /* width: 100px; */
+     /* margin-right: 15px; */
+    }
+  
+    
+  
+  
+  
+    :host >>> .popover>.arrow:after {
+      /* border-bottom-color: #009688; */
+      left: 250%;
+    }
+    :host >>> .popover>.arrow::before {
+      /* border-bottom-color: #009688; */
+      left: 250%;
+    }
+    .myCustomClassForPop{
+      left: 1138px;
+    }
+   :host >>> .bs-popover-bottom {
+     left: 1100px;
+   }
+  
+   #content{
+    width: 17px;
+    min-height: 17px;
+    
+    position:relative;
+    background:#74C916;
+    border-radius:50%;
+    }
+    #content:after {
+        content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      border:  2px solid #74C916;
+      border-style:dotted;
+      border-radius:50%;
+      }
+      #content1{
+        width: 17px;
+        min-height: 17px;
+        
+        position:relative;
+        background:#D0021B;
+        border-radius:50%;
+        }
+        #content1:after {
+            content: '';
+          position: absolute;
+          top: -3px;
+          left: -3px;
+          right: -3px;
+          bottom: -3px;
+          border:  2px solid #D0021B;
+          border-style:dotted;
+          border-radius:50%;
+          }
+  
+          .fundingDetailsCSS{
+            font-family: SFProText-Regular;
+  font-size: 22px;
+  color: #006780;
+  letter-spacing: 0.35px;
+  
+  line-height: 28px;
+          }
+
+          /* .dot {
+            height: 7px;
+            width: 7px;
+            background-color:#000000;
+            border-radius: 50%;
+            display: inline-block;
+
+        } */
+
+            .myCustomAddNewUSerButton{
+          background: #006780;
+          border-radius: 8px; 
+          font-family: SFProText-Regular;
+            font-size: 20px;
+            color: #FFFFFF;
+          letter-spacing: 0.75px;
+
+      line-height: 24px;
+        }
+
+        
+.myCustomDetailsHeading{
+  font-size: 18px;
+color: #006780;
+letter-spacing: 0.49px;
+}
+
+.myTableCustomHeading{
+  background: #E8E8E8;
+border: 1px solid #EAEAEA;
+}
+
+.addHeadingDetailsHeading{
+  font-family: SFProText-Semibold;
+  font-size: 13px;
+  color: #666666;
+  letter-spacing: -0.08px;
+ 
+  line-height: 18px;
+}
+.addNewUserHeading{
+  font-family: SFProText-Regular;
+  font-size: 13px;
+  color: #666666;
+  letter-spacing: -0.08px;
+  
+  line-height: 18px;
+}
+
+
+::-webkit-input-placeholder {
+  text-align: right;
+  
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: right;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: right;  
+}
+
+:-ms-input-placeholder {  
+  text-align: right; 
+}
+
+input{
+   text-align: right;
+   border: none;
+}
